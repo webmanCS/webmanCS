@@ -1,0 +1,3160 @@
+html {
+    scroll-behavior: smooth; /* For simple CSS-based smooth scrolling */
+}
+
+/* Resetting default margin and padding */
+* {
+    font-family: helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+body {
+    
+    background-color: #f0f0f0; /* Light grey background */
+    color: #212121; /* Dark grey text */
+    line-height: 1.6;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.8)
+      ),url("./images/drone\ 1.jpg");
+
+      background-size: cover;
+      position: relative;  
+      width: 98.7%;
+    
+}
+
+
+
+/*HEADER*/
+/* Header styles */
+header {
+    background-color: #222222; /* Dark background for header */
+    color: #fff; /* White text */
+    padding: 10px 0;
+    height: 550px;
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.8)
+      ),url("./images/drone\ 1.jpg");
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.dream-text
+{
+    font-size: 60px;
+}
+
+.intro-button
+{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.btnContact
+{
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    color: black;
+    z-index: 1;
+}   
+
+.btnContact:before
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.btnContact:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #00A36C;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .btnContact:hover {
+    color: #ffffff;
+    border: 1px solid #00A36C;
+    
+  }
+  
+  .btnContact:hover:before {
+    top: -35%;
+    background-color: #00A36C;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .btnContact:hover:after {
+    top: -45%;
+    background-color: #00A36C;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .logo
+  {
+    width: 99%;
+    text-align: center;
+  }
+
+.imglogo
+{
+
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+
+}
+
+.name
+{
+    margin: 10px;
+    font-size: 18px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* White links */
+    
+    padding: 10px 15px;
+    font-size: 18px;
+    
+    border-radius: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+    
+}
+
+nav ul li a:hover {
+    background: #00A36C;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+section {
+    padding: 20px;
+    height: auto;
+    margin: 10px; /* Offset for fixed header */
+    box-shadow: 0 0 10px #050505;
+    border-radius: 10px;
+     
+}
+
+section:nth-of-type(odd) {
+    background-color: #fffafa;
+}
+
+section:nth-of-type(even) {
+    background-color: #fffafa;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+/*FOOTER*/
+
+
+
+.footer{
+    background:#333;
+    padding: 10px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    position: absolute;
+    width: 100%;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:white;
+    font-size: 16px;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:white;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+
+.active{
+
+background: #00A36C;
+
+
+}
+
+.active:hover
+{
+color: white;
+}
+
+
+/*_____________________________________________________________________________________________________________________________________*/
+
+/*HOME PAGE*/
+
+
+/*HOME SLIDING GALLERY*/
+
+
+
+.carousel
+{
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+
+.carousel::before, .carousel::after
+{
+    position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.carousel::before {
+    left: 0;
+    
+  }
+  
+  .carousel::after {
+    right: 0;
+    
+  }
+
+  .carousel_items
+  {
+    display: inline-block;
+    animation: 30s slides infinite linear;
+  }
+
+  .carousel:hover .carousel_items
+  {
+    animation-play-state: paused;
+  }
+
+  .carousel_items img
+  {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
+
+
+
+/*_________________________________________________________________________________________________________________*/
+
+.main_video
+{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.intro
+{
+    width: 800px;
+    border-radius: 10px;
+    
+}
+
+.home_head
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+.vid_text
+{
+    margin-top: 20px;
+}
+
+hr
+{
+    margin-top: 10px;
+}
+
+/*_____________________________________________________________________________________________________________________________________*/
+
+/*ABOUT*/
+
+
+/*_____________________________________________________________________________________________________________________________________*/
+
+/*ACCOMMODATION*/
+
+.vinemain
+{
+    background-color: #ffffffb9; /* White background */
+    padding: 20px;
+    margin: 3px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    margin-top: 10px;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    transition: transform .2s;
+    color: #333;
+    text-decoration: none;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup .btnContact
+{
+    float: inline-end;
+    margin: 10px;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+#textField {
+    margin-left: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: underline;
+    width: 100px;
+    text-align: center;
+}
+
+#textField:hover
+{
+    text-decoration: underline;
+}
+
+.checked {
+    color: rgb(255, 136, 0);
+  }
+
+  .rating
+  {
+    margin-left: 10px;
+    
+  }
+
+  .manortext
+  {
+    color: #212121;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    
+  }
+
+  .manorbody
+  {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .manorhead
+  {
+    font-size: 32px;
+  }
+
+  .manorboxone
+  {
+    flex: 60%;
+  }
+
+  .manorboxtwo
+  {
+    flex:40%
+  }
+
+  .manorvideo
+  {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+
+
+  .img_gallery
+  {
+    width: 200px;
+    padding: 5px;
+  }
+
+  #txt_gallery
+  {
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: double;
+    text-decoration: underline;
+  }
+
+  /*EXPANDABLE GALLERY*/
+
+  .viewgallery .popup
+  {
+    
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .gallery_view .column
+  {
+    float: left;
+    width: 30%;
+    padding: 10px;
+  }
+
+  .gallery_view .column img
+  {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .gallery_view .column img:hover
+  {
+    opacity: 1;
+  }
+
+  .gallery_view .row::after
+  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+  /*____________________________________________________________________________________________*/
+
+  .guests
+  {
+    display: flex;
+  }
+
+  .imgGuests
+  {
+    flex: 30%;
+    max-width: 45px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtGuests
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-top: 24px;
+  }
+
+  .location
+  {
+    display: flex;
+  }
+
+  .location a
+  {
+    text-decoration: underline;
+  }
+
+  .imgLoc
+  {
+    flex: 30%;
+    max-width: 45px;
+    max-height: 45px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtLoc
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+  .links
+  {
+    display: flex;
+    
+  }
+
+  .links a
+  {
+    text-decoration: underline;
+  }
+
+  .imgLink
+  {
+    flex: 30%;
+    max-width: 45px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtLink
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #212121;
+    margin-top: 22px;
+  }
+
+  a{
+    color: #212121;
+  }
+
+  .reviewhead
+  {
+    font-size: 14px;
+  }
+
+/*_____________________________________________________________________________________________________________________________________*/
+
+/*CONTACT*/
+
+.main-content 
+{
+    background-color: #fff; /* White background */
+    padding: 20px;
+    margin: 20px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    margin-bottom: 100px;
+    height: auto;
+    display: flex;
+    border-radius: 5px;
+}
+
+.left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.right {
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid #ccc;
+    
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 99%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-group .required {
+    color: red;
+    font-weight: bold;
+}
+
+.form-group button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+.vines_map
+{
+    padding-top: 5px;
+    width: 80%;
+}
+
+/*_____________________________________________________________________________________________________________________________________*/
+
+@media screen and (max-width: 500px) 
+{
+    /*HEADER AND HOME*/
+    header
+    {
+        width: 100%;
+        height: 400px;
+    }
+
+    nav ul li a
+    {
+        font-size: 14px;
+    }
+
+    .dream-text
+    {
+        font-size: 35px;
+    }
+
+    .welcome h1
+    {
+        font-size: 25px;
+    }
+
+    .welcome
+    {
+        max-width: 95%;
+        margin-top: -300px;
+    }
+
+    .logo
+    {
+      width: 99%;
+      text-align: center;
+    }
+
+    .imglogo
+    {
+
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
+    }
+
+    .intro-button
+    {
+    text-align: center;
+    margin-top: 40px;
+    }
+
+/*INFINITE CAROUSEL*/
+
+.carousel
+{
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+
+.carousel::before, .carousel::after
+{
+    position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.carousel::before {
+    left: 0;
+    
+  }
+  
+  .carousel::after {
+    right: 0;
+    
+  }
+
+  .carousel_items
+  {
+    display: inline-block;
+  animation: 35s slides infinite linear;
+  }
+
+  .carousel:hover .carousel_items
+  {
+    animation-play-state: paused;
+  }
+
+  .carousel_items img
+  {
+    height: 300px;
+  }
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+    .main_video
+    {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro
+    {
+        width: 400px;
+        border-radius: 10px;
+        
+    }
+/*_____________________________________________________________________________________________________________________________________*/
+
+/*ABOUT*/
+
+/*_____________________________________________________________________________________________________________________________________*/
+
+/*ACCOMMODATION*/
+
+.vinemain
+{
+    background-color: #ffffffb9; /* White background */
+    padding: 20px;
+    margin: 3px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    margin-top: 10px;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    transition: transform .2s;
+    color: #333;
+    text-decoration: none;
+}
+
+.checked {
+    color: rgb(255, 136, 0);
+  }
+
+  .rating
+  {
+    margin-left: 10px;
+    
+  }
+
+  .manortext
+  {
+    color: #212121;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8vmin;
+    
+  }
+
+  .manorbody
+  {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .manorhead
+  {
+    font-size: 2vw;
+  }
+
+  .manorboxone
+  {
+    flex: 60%;
+  }
+
+  .manorboxtwo
+  {
+    flex:40%
+  }
+
+  .manorvideo
+  {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+
+  .guests
+  {
+    display: flex;
+  }
+
+  .imgGuests
+  {
+    flex: 30%;
+    max-width: 65px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtGuests
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8vmin;
+    margin-top: 14px;
+  }
+
+  .location
+  {
+    display: flex;
+  }
+
+  .imgLoc
+  {
+    flex: 30%;
+    max-width: 65px;
+    max-height: 65px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtLoc
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8vmin;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+  .links
+  {
+    display: flex;
+    
+  }
+
+  .imgLink
+  {
+    flex: 30%;
+    max-width: 65px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtLink
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8vmin;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+  a{
+    color: #212121;
+  }
+
+  .reviewhead
+  {
+    font-size: 2vw;
+  }
+
+/*_____________________________________________________________________________________________________________________________________*/
+
+/*CONTACT*/
+
+.main-content 
+{
+    background-color: #fff; /* White background */
+    padding: 20px;
+    margin: 20px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    margin-bottom: 100px;
+    height: auto;
+    display: flex;
+    border-radius: 5px;
+}
+
+.left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.right {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-group .required {
+    color: red;
+    font-weight: bold;
+}
+
+.form-group button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+.vines_map
+{
+    padding-top: 5px;
+    width: 80%;
+}
+
+/*_____________________________________________________________________________________________________________________________________*/
+
+/*FOOTER*/
+.footer{
+    background:#333;
+    padding: 10px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:white;
+    font-size:12px;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:white;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:12px;
+    margin:0% 1%;
+    }
+
+}
+
+@media screen and (max-width: 800px)
+{
+    /*HEADER AND HOME*/
+
+    /*INFINITE CAROUSEL*/
+
+.carousel
+{
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+
+.carousel::before, .carousel::after
+{
+    position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.carousel::before {
+    left: 0;
+    
+  }
+  
+  .carousel::after {
+    right: 0;
+    
+  }
+
+  .carousel_items
+  {
+    display: inline-block;
+  animation: 35s slides infinite linear;
+  }
+
+  .carousel:hover .carousel_items
+  {
+    animation-play-state: paused;
+  }
+
+  .carousel_items img
+  {
+    height: 300px;
+  }
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*ABOUT*/
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*ACCOMMODATION*/
+
+    .vinemain
+{
+    background-color: #ffffffb9; /* White background */
+    padding: 20px;
+    margin: 3px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    margin-top: 10px;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    transition: transform .2s;
+    color: #333;
+    text-decoration: none;
+}
+
+.checked {
+    color: rgb(255, 136, 0);
+  }
+
+  .rating
+  {
+    margin-left: 10px;
+    
+  }
+
+  .manortext
+  {
+    color: #212121;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8vmin;
+    
+  }
+
+  .manorbody
+  {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .manorhead
+  {
+    font-size: 2vw;
+  }
+
+  .manorboxone
+  {
+    flex: 60%;
+  }
+
+  .manorboxtwo
+  {
+    flex:40%
+  }
+
+  .manorvideo
+  {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+
+  .guests
+  {
+    display: flex;
+  }
+
+  .imgGuests
+  {
+    flex: 30%;
+    max-width: 65px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtGuests
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8vmin;
+    margin-top: 14px;
+  }
+
+  .location
+  {
+    display: flex;
+  }
+
+  .imgLoc
+  {
+    flex: 30%;
+    max-width: 65px;
+    max-height: 65px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtLoc
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8vmin;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+  .links
+  {
+    display: flex;
+    
+  }
+
+  .imgLink
+  {
+    flex: 30%;
+    max-width: 65px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtLink
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8vmin;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+  a{
+    color: #212121;
+  }
+
+  .reviewhead
+  {
+    font-size: 2vw;
+  }
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*CONTACT*/
+
+    .main-content 
+{
+    background-color: #fff; /* White background */
+    padding: 20px;
+    margin: 20px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    margin-bottom: 100px;
+    height: auto;
+    display: flex;
+    border-radius: 5px;
+}
+
+.left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.right {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-group .required {
+    color: red;
+    font-weight: bold;
+}
+
+.form-group button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+.vines_map
+{
+    padding-top: 5px;
+    width: 80%;
+}
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+}
+
+@media screen and (max-width: 450px)
+{
+    /*HEADER AND HOME*/
+    header
+    {
+        width: 100%;
+        height: 400px;
+    }
+
+    nav ul li a
+    {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .dream-text
+    {
+        font-size: 30px;
+    }
+
+    .welcome h1
+    {
+        font-size: 0px;
+    }
+
+    .welcome
+    {
+        max-width: 95%;
+        margin-top: -300px;
+    }
+
+    .logo
+    {
+      width: 99%;
+      text-align: center;
+    }
+
+    .imglogo
+    {
+
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
+    }
+
+    .intro-button
+    {
+    text-align: center;
+    margin-top: 40px;
+    }
+
+    /*INFINITE CAROUSEL*/
+
+.carousel
+{
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+
+.carousel::before, .carousel::after
+{
+    position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.carousel::before {
+    left: 0;
+    
+  }
+  
+  .carousel::after {
+    right: 0;
+    
+  }
+
+  .carousel_items
+  {
+    display: inline-block;
+  animation: 35s slides infinite linear;
+  }
+
+  .carousel:hover .carousel_items
+  {
+    animation-play-state: paused;
+  }
+
+  .carousel_items img
+  {
+    height: 200px;
+  }
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+    .main_video
+    {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro
+    {
+        width: 350px;
+        border-radius: 10px;
+        
+    }
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*ABOUT*/
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*ACCOMMODATION*/
+
+    .vinemain
+{
+    background-color: #ffffffb9; /* White background */
+    padding: 20px;
+    margin: 3px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    margin-top: 10px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    transition: transform .2s;
+    color: #333;
+    text-decoration: none;
+}
+
+.checked {
+    color: rgb(255, 136, 0);
+  }
+
+  .rating
+  {
+    margin-left: 5px;
+    font-size: 14px;
+    
+  }
+
+  .manortext
+  {
+    color: #212121;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+
+    
+  }
+
+  .manorbody
+  {
+    max-width: 100%;
+    padding: 1px;
+  }
+
+  .manorhead
+  {
+    font-size: 18px;
+  }
+
+
+  .manorvideo
+  {
+    max-width: 100%;
+    height: auto;
+    padding: 1px;
+  }
+
+
+  .guests
+  {
+    display: flex;
+  }
+
+  .imgGuests
+  {
+    flex: 30%;
+    max-width: 45px;
+    height: auto;
+    padding: 5px;
+  }
+
+  .txtGuests
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-top: 14px;
+  }
+
+  .location
+  {
+    display: flex;
+  }
+
+  .imgLoc
+  {
+    flex: 30%;
+    max-width: 45px;
+    height: 45px;
+    padding: 5px;
+  }
+
+  .txtLoc
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    margin-top: 5px;
+  }
+
+  .links
+  {
+    display: flex;
+    
+  }
+
+  .imgLink
+  {
+    flex: 30%;
+    max-width: 45px;
+    height: 45px;
+    padding: 5px;
+  }
+
+  .txtLink
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+  a{
+    color: #212121;
+  }
+
+  .reviewhead
+  {
+    font-size: 2vw;
+  }
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*CONTACT*/
+
+    .main-content 
+{
+    background-color: #fff; /* White background */
+    padding: 5px;
+    margin: 10px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.left {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.right {
+    flex: 1;
+    padding-left: 10px;
+    border-left: 1px transparent;
+}
+
+.section-title {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    height: auto;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: start;
+}
+
+.form-group textarea {
+    height: auto;
+    width: 250px;
+    
+}
+
+.form-group .required {
+    color: red;
+    font-weight: bold;
+}
+
+.form-group button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+.vines_map
+{
+    padding-top: 5px;
+    width: 100%;
+    height: 250px;
+}
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*FOOTER*/
+    .footer{
+        background:#333;
+        padding: 10px;
+        text-align:center;
+        }
+        
+        .footer .row{
+        width:100%;
+        margin:1% 0%;
+        padding:0.6% 0%;
+        color:white;
+        font-size:16px;
+        }
+        
+        .footer .row a{
+        text-decoration:none;
+        color:white;
+        transition:0.5s;
+        }
+        
+        .footer .row a:hover{
+        color:#fff;
+        }
+        
+        .footer .row ul{
+        width:100%;
+        }
+        
+        .footer .row ul li{
+        display:inline-block;
+        margin:0px 10px;
+        }
+        
+        .footer .row a i{
+        font-size:12px;
+        margin:0% 1%;
+        }
+        
+}
+
+@media screen and (max-width: 380px)
+{
+    /*HEADER AND HOME*/
+    header
+    {
+        width: 100%;
+        height: 400px;
+    }
+
+    nav ul {
+        
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+    nav ul li a {
+        color: #fff; /* White links */
+        text-decoration: underline;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 10px;
+        display: block;
+        transition: background-color 0.3s ease;
+        
+    }
+
+    .dream-text
+    {
+        font-size: 26px;
+    }
+
+    .hrhome
+    {
+        width: 99%;
+    }
+
+    .welcome h1
+    {
+        font-size: 0px;
+    }
+
+    .welcome
+    {
+        max-width: 95%;
+        margin-top: -300px;
+    }
+
+    .logo
+    {
+      width: 99%;
+      text-align: center;
+    }
+
+    .imglogo
+    {
+
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
+    }
+
+    .intro-button
+    {
+    text-align: center;
+    margin-top: 40px;
+    }
+
+    /*INFINITE CAROUSEL*/
+
+.carousel
+{
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+
+.carousel::before, .carousel::after
+{
+    position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.carousel::before {
+    left: 0;
+    
+  }
+  
+  .carousel::after {
+    right: 0;
+    
+  }
+
+  .carousel_items
+  {
+    display: inline-block;
+  animation: 35s slides infinite linear;
+  }
+
+  .carousel:hover .carousel_items
+  {
+    animation-play-state: paused;
+  }
+
+  .carousel_items img
+  {
+    height: 300px;
+  }
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+    .main_video
+    {
+        margin-top: 20px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .intro
+    {
+        width: 300px;
+        border-radius: 10px;
+        
+    }
+
+    .home_head
+    {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .vineyard_head
+    {
+        font-size: 18px;
+    }
+
+    .vineyard_intro
+    {
+        font-size: 18px;
+    }
+
+    .vineyardbody
+    {
+        font-size: 16px;
+    }
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*ABOUT*/
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*ACCOMMODATION*/
+
+    .vinemain
+{
+    background-color: #ffffffb9; /* White background */
+    padding: 20px;
+    margin: 3px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    margin-top: 10px;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    transition: transform .2s;
+    color: #333;
+    text-decoration: none;
+}
+
+.checked {
+    color: rgb(255, 136, 0);
+  }
+
+  .rating
+  {
+    margin-left: 10px;
+    
+  }
+
+  .manortext
+  {
+    color: #212121;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    
+  }
+
+  .manorbody
+  {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .manorhead
+  {
+    font-size: 20px;
+  }
+
+  .manorboxone
+  {
+    flex: 70%;
+  }
+
+  .manorboxtwo
+  {
+    flex:30%
+  }
+
+  .manorvideo
+  {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .img_gallery
+  {
+    width: 100px;
+  }
+
+  .guests
+  {
+    display: flex;
+  }
+
+  .imgGuests
+  {
+    flex: 30%;
+    max-width: 65px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtGuests
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8vmin;
+    margin-top: 14px;
+  }
+
+  .location
+  {
+    display: flex;
+  }
+
+  .imgLoc
+  {
+    flex: 30%;
+    max-width: 65px;
+    max-height: 65px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtLoc
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8vmin;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+  .links
+  {
+    display: flex;
+    
+  }
+
+  .imgLink
+  {
+    flex: 30%;
+    max-width: 65px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .txtLink
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8vmin;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+  a{
+    color: #212121;
+  }
+
+  .reviewhead
+  {
+    font-size: 2vw;
+  }
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*CONTACT*/
+
+    .main-content 
+{
+    background-color: #fff; /* White background */
+    padding: 5px;
+    margin: 5px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+}
+
+.left {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.right {
+    flex: 1;
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
+}
+
+.section-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    height: 80px;
+    width: 70px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: start;
+}
+
+.form-group textarea {
+    height: 80px;
+    width: 70px;
+    
+}
+
+.form-group .required {
+    color: red;
+    font-weight: bold;
+}
+
+.form-group button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+strong
+{
+    font-size: 12px;
+}
+
+.secttext
+{
+    font-size: 12px;
+}
+
+.vines_map
+{
+    padding-top: 5px;
+    width: 100%;
+    height: 200px;
+}
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*FOOTER*/
+    .footer{
+        background:#333;
+        padding: 10px;
+        text-align:center;
+        }
+        
+        .footer .row{
+        width:100%;
+        margin:1% 0%;
+        padding:0.6% 0%;
+        color:white;
+        font-size:14px;
+        }
+        
+        .footer .row a{
+        text-decoration:none;
+        color:white;
+        transition:0.5s;
+        }
+        
+        .footer .row a:hover{
+        color:#fff;
+        }
+        
+        .footer .row ul{
+        width:100%;
+        }
+        
+        .footer .row ul li{
+        display:inline-block;
+        margin:0px 10px;
+        }
+        
+        .footer .row a i{
+        font-size:12px;
+        margin:0% 1%;
+        }
+}
+
+@media screen and (max-width: 320px)
+{
+    /*HEADER AND HOME*/
+    header
+    {
+        width: 100%;
+        height: 700px;
+    }
+
+    nav ul {
+        
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin-right: 1px;
+    }
+    
+    nav ul li a {
+        color: #fff; /* White links */
+        text-decoration: underline;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 10px;
+        display: block;
+        transition: background-color 0.3s ease;
+        
+    }
+
+    .dream-text
+    {
+        font-size: 22px;
+    }
+
+    .hrhome
+    {
+        width: 99%;
+    }
+
+    .welcome h1
+    {
+        font-size: 0px;
+    }
+
+    .welcome
+    {
+        max-width: 95%;
+        margin-top: -300px;
+    }
+
+    .logo
+    {
+      width: 99%;
+      text-align: center;
+    }
+
+    .imglogo
+    {
+
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
+    }
+
+    .intro-button
+    {
+    text-align: center;
+    margin-top: 40px;
+    }
+
+    /*INFINITE CAROUSEL*/
+
+.carousel
+{
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+
+.carousel::before, .carousel::after
+{
+    position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.carousel::before {
+    left: 0;
+    
+  }
+  
+  .carousel::after {
+    right: 0;
+    
+  }
+
+  .carousel_items
+  {
+    display: inline-block;
+  animation: 35s slides infinite linear;
+  }
+
+  .carousel:hover .carousel_items
+  {
+    animation-play-state: paused;
+  }
+
+  .carousel_items img
+  {
+    height: 300px;
+  }
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+    .main_video
+    {
+        margin-top: 10px;
+        width: 260px;
+        text-align: center;
+    }
+
+    .intro
+    {
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+
+    .home_head
+    {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .vineyard_head
+    {
+        font-size: 18px;
+    }
+
+    .vineyard_intro
+    {
+        font-size: 18px;
+    }
+
+    .vineyardbody
+    {
+        font-size: 14px;
+    }
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*ABOUT*/
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*ACCOMMODATION*/
+
+    .vinemain
+{
+    background-color: #ffffffb9; /* White background */
+    padding: 20px;
+    margin: 1px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    margin-top: 10px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    transition: transform .2s;
+    color: #333;
+    text-decoration: none;
+}
+
+.checked 
+{
+    color: rgb(255, 136, 0);
+  }
+
+  .rating
+  {
+    margin-left: 2px;
+    font-size: 10px;
+    
+  }
+
+  .manortext
+  {
+    color: #212121;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    
+  }
+
+  .manorbody
+  {
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .manorhead
+  {
+    font-size: 14px;
+  }
+
+ 
+  .manorvideo
+  {
+    max-width: 99%;
+    height: auto;
+    padding: 5px;
+  }
+
+
+  .guests
+  {
+    display: flex;
+  }
+
+  .imgGuests
+  {
+    
+    max-width: 40px;
+    height: auto;
+    padding: 5px;
+  }
+
+  .txtGuests
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .location
+  {
+    display: flex;
+  }
+
+  .imgLoc
+  {
+    max-width: 40px;
+    max-height: 40px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .txtLoc
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+  .links
+  {
+    display: flex;
+    
+  }
+
+  .imgLink
+  {
+    max-width: 40px;
+    height: auto;
+    padding: 5px;
+  }
+
+  .txtLink
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+ 
+
+  .reviewhead
+  {
+    font-size: 10px;
+  }
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*CONTACT*/
+
+    .main-content 
+{
+    background-color: #fff; /* White background */
+    padding: 5px;
+    margin: 5px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.left {
+    
+    padding-right: 10px;
+}
+
+.right {
+    
+    padding-left: 10px;
+    border-left: 1px transparent
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    height: auto;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: start;
+}
+
+.form-group textarea {
+    height: auto;
+    width: 150px;
+    
+}
+
+.form-group .required {
+    color: red;
+    font-weight: bold;
+}
+
+.form-group button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+strong
+{
+    font-size: 14px;
+}
+
+.secttext
+{
+    font-size: 14px;
+}
+
+.vines_map
+{
+    padding-top: 5px;
+    width: 100%;
+    height: 150px;
+}
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*FOOTER*/
+    .footer{
+        background:#333;
+        padding: 10px;
+        text-align:center;
+        }
+        
+        .footer .row{
+        width:100%;
+        margin:1% 0%;
+        padding:0.6% 0%;
+        color:white;
+        font-size:10px;
+        }
+        
+        .footer .row a{
+        text-decoration:none;
+        color:white;
+        transition:0.5s;
+        }
+        
+        .footer .row a:hover{
+        color:#fff;
+        }
+        
+        .footer .row ul{
+        width:100%;
+        }
+        
+        .footer .row ul li{
+        display:inline-block;
+        margin:0px 10px;
+        }
+        
+        .footer .row a i{
+        font-size:12px;
+        margin:0% 1%;
+        }
+}
+
+@media screen and (max-width: 390px)
+{
+    /*HEADER AND HOME*/
+    header
+    {
+        width: 100%;
+        height: 700px;
+    }
+
+    nav ul {
+        
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin-right: 1px;
+    }
+    
+    nav ul li a {
+        color: #fff; /* White links */
+        text-decoration: underline;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 10px;
+        display: block;
+        transition: background-color 0.3s ease;
+        
+    }
+
+    .dream-text
+    {
+        font-size: 22px;
+    }
+
+    .hrhome
+    {
+        width: 99%;
+    }
+
+    .welcome h1
+    {
+        font-size: 0px;
+    }
+
+    .welcome
+    {
+        max-width: 95%;
+        margin-top: -300px;
+    }
+
+    .logo
+    {
+      width: 99%;
+      text-align: center;
+    }
+
+    .imglogo
+    {
+
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
+    }
+
+    .intro-button
+    {
+    text-align: center;
+    margin-top: 40px;
+    }
+
+    /*INFINITE CAROUSEL*/
+
+.carousel
+{
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+
+.carousel::before, .carousel::after
+{
+    position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.carousel::before {
+    left: 0;
+    
+  }
+  
+  .carousel::after {
+    right: 0;
+    
+  }
+
+  .carousel_items
+  {
+    display: inline-block;
+  animation: 35s slides infinite linear;
+  }
+
+  .carousel:hover .carousel_items
+  {
+    animation-play-state: paused;
+  }
+
+  .carousel_items img
+  {
+    height: 300px;
+  }
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+    .main_video
+    {
+        margin-top: 10px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .intro
+    {
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+
+    .home_head
+    {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .vineyard_head
+    {
+        font-size: 18px;
+    }
+
+    .vineyard_intro
+    {
+        font-size: 18px;
+    }
+
+    .vineyardbody
+    {
+        font-size: 14px;
+    }
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*ABOUT*/
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*ACCOMMODATION*/
+
+    .vinemain
+{
+    background-color: #ffffffb9; /* White background */
+    padding: 20px;
+    margin: 1px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    margin-top: 10px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    transition: transform .2s;
+    color: #333;
+    text-decoration: none;
+}
+
+.checked 
+{
+    color: rgb(255, 136, 0);
+  }
+
+  .rating
+  {
+    margin-left: 2px;
+    font-size: 10px;
+    
+  }
+
+  .manortext
+  {
+    color: #212121;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    
+  }
+
+  .manorbody
+  {
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .manorhead
+  {
+    font-size: 14px;
+  }
+
+ 
+  .manorvideo
+  {
+    max-width: 99%;
+    height: auto;
+    padding: 5px;
+  }
+
+
+  .guests
+  {
+    display: flex;
+  }
+
+  .imgGuests
+  {
+    
+    max-width: 40px;
+    height: auto;
+    padding: 5px;
+  }
+
+  .txtGuests
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .location
+  {
+    display: flex;
+  }
+
+  .imgLoc
+  {
+    max-width: 40px;
+    max-height: 40px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .txtLoc
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+  .links
+  {
+    display: flex;
+    
+  }
+
+  .imgLink
+  {
+    max-width: 40px;
+    height: auto;
+    padding: 5px;
+  }
+
+  .txtLink
+  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: #212121;
+    margin-top: 14px;
+  }
+
+ 
+
+  .reviewhead
+  {
+    font-size: 10px;
+  }
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*CONTACT*/
+
+    .main-content 
+{
+    background-color: #fff; /* White background */
+    padding: 5px;
+    margin: 5px;
+    max-width: 99%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.left {
+    
+    padding-right: 10px;
+}
+
+.right {
+    
+    padding-left: 10px;
+    border-left: 1px transparent
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    height: auto;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: start;
+}
+
+.form-group textarea {
+    height: auto;
+    width: 150px;
+    
+}
+
+.form-group .required {
+    color: red;
+    font-weight: bold;
+}
+
+.form-group button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+strong
+{
+    font-size: 14px;
+}
+
+.secttext
+{
+    font-size: 14px;
+}
+
+.vines_map
+{
+    padding-top: 5px;
+    width: 100%;
+    height: 150px;
+}
+
+    /*_____________________________________________________________________________________________________________________________________*/
+
+    /*FOOTER*/
+    .footer{
+        background:#333;
+        padding: 10px;
+        text-align:center;
+        }
+        
+        .footer .row{
+        width:100%;
+        margin:1% 0%;
+        padding:0.6% 0%;
+        color:white;
+        font-size:10px;
+        }
+        
+        .footer .row a{
+        text-decoration:none;
+        color:white;
+        transition:0.5s;
+        }
+        
+        .footer .row a:hover{
+        color:#fff;
+        }
+        
+        .footer .row ul{
+        width:100%;
+        }
+        
+        .footer .row ul li{
+        display:inline-block;
+        margin:0px 10px;
+        }
+        
+        .footer .row a i{
+        font-size:12px;
+        margin:0% 1%;
+        }
+}
+
+
+
+
